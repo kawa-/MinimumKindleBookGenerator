@@ -1,0 +1,29 @@
+/* 
+    Document   : misc
+    Created on : 2013/02/23, 0:01:50
+    Author     : mk
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body { font-size: 14pt;
+	   line-height: 1.2; }
+
+h1{  
+	text-align: center;
+	border-left:21px solid #abc;
+	border-right:21px solid #abc;  
+	border-top: 3px solid #abc;  
+	border-bottom:3px solid #abc;  
+	padding:.02em .3em  
+}  
+
+h2{  
+	border-left:7px solid #abc;  
+	border-bottom:3px solid #abc;  
+	padding:.02em .3em  
+}  
