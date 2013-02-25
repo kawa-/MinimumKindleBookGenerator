@@ -6,7 +6,7 @@ A web GUI of generating a simple Kindle Book.
 
 ## Requirements
 - Available on Linux, MacOS (and probably FreeBSD)
-- HTTPD(Apache, Nginx, lighttd, etc)
+- httpd(Apache, Nginx, lighttd, etc)
 - PHP(> 5.3)
 - PHP plugins, GD, mbstring
 - [KindleGen v2.8 for Linux 2.6 i386](http://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000765211)
