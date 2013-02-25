@@ -10,7 +10,31 @@ A web GUI of generating a simple Kindle Book.
 - [ipagui-mona.ttf](http://www.geocities.jp/ipa_mona/opfc-ModuleHP-1.1.1_withIPAMonaFonts-1.0.8.tar.gz)
 
 ## Licence
-- Public Domain ( But contributions are really welcome:) )
+- Public Domain ( contributions are really welcome:) )
+
+## Notes
+I'd like to host this to my server for everybody, but according to kindlegen's licence, to set kindlegen via network is forbidden. So please use it on your own machine for only you.
 
 ## How to install and run
-
+	$ yum install php php-mbstring php-mysql php-mcrypt php-gd php-devel php-pear php-pecl-apc httpd git -y
+	$ cd /var/lib/
+	$ git clone git://github.com/kawa-/MinimumKindleBookGenerator.git
+	$ cd MinimumKindleBookGenerator/
+	$ mkdir kindlegen_lib
+	$ cd kindlegen_lib/
+	$ wget http://s3.amazonaws.com/kindlegen/kindlegen_linux_2.6_i386_v2_8.tar.gz
+	$ tar -zxvf kindlegen_linux_2.6_i386_v2_8.tar.gz
+	$ cp kindlegen ./../
+	$ cd ..
+	$ wget http://www.geocities.jp/ipa_mona/opfc-ModuleHP-1.1.1_withIPAMonaFonts-1.0.8.tar.gz
+	$ tar -zxvf opfc-ModuleHP-1.1.1_withIPAMonaFonts-1.0.8.tar.gz
+	$ cp opfc-ModuleHP-1.1.1_withIPAMonaFonts-1.0.8/fonts/ipagui-mona.ttf ./
+	$ rm -rf opfc-ModuleHP-1.1.1_withIPAMonaFonts-1.0.8* kindlegen_lib
+	$ chown -R apache:apache /var/lib/MinimumKindleBookGenerator
+	$ ln -s /var/lib/MinimumKindleBookGenerator /var/www/html/MKBG
+	$ cp Lib/php.ini /etc/php.ini
+	$ service httpd restart
+- And access to http://yourdomain/MKBG/.
+- In the webpage, firstly click "Set example".
+- Next, "Generate Book".
+- In the end, downloadlink and log will appear.
