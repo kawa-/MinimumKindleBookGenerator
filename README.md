@@ -10,10 +10,11 @@ A web GUI of generating a simple Kindle Book.
 - [ipagui-mona.ttf](http://www.geocities.jp/ipa_mona/opfc-ModuleHP-1.1.1_withIPAMonaFonts-1.0.8.tar.gz)
 
 ## Licence
-- Public Domain ( contributions are really welcome:) )
+- Public Domain ( Contributions are really welcome:) )
 
 ## Notes
 I'd like to host this to my server for everybody, but according to kindlegen's licence, to set kindlegen via network is forbidden. So please use it on your own machine for only you.
+
 
 ## How to install and run
 	$ yum install php php-mbstring php-mysql php-mcrypt php-gd php-devel php-pear php-pecl-apc httpd git -y
