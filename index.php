@@ -13,7 +13,7 @@
 
 		<div>
 			<h2>What's this?</h2>
-			<p>You can make a kindle format book here and get the ebook via your email.<br>Probably this service is suitable for a short document like a <a href="http://www.ted.com/">TED</a> movie's script, brief report and so on.</p>
+			<p>You can make a kindle format book here.<br>Probably this service is suitable for a short document like a <a href="http://www.ted.com/">TED</a> movie's script, brief report and so on.</p>
 		</div>
 
 		<div>
@@ -32,7 +32,7 @@
 				2. You need to fill in at least three chapters.<br>
 				3. If you want to make a rich Kindle book, try to find other better services.<br>
 				4. Please do not pirate. <br>
-				5. To the extent you inputted original texts, the book you generated here belongs to you, you have a copyright of it and can use it as you want. About One hour after generating your book, this service automatically removes it from this system.<br>
+				5. To the extent you inputted original texts, the book you generated here belongs to you, you have a copyright of it and can use it as you want.<br>
 			</p>
 		</div>
 
@@ -96,15 +96,8 @@
 		<!-- When pull request, please add your name and your contribution. -->
 		<div>
 			<h2>Contributer</h2>
-			<p>- KAWAMORITA Mitsuaki, firstly wrote this service.<br></p>
-		</div>
-
-		<!-- ---------- History ---------- -->
-		<!-- When pull request, please add date, your name and your contribution. -->
-		<div>
-			<h2>History</h2>
-			<p>2012-08-11:<br>Started making this web app. [KAWAMORITA Mitsuaki]</p>
-			<p>2013-02-23:<br>Rewrited this service and deployed to the world. [KAWAMORITA Mitsuaki]</p>
+			<p>- Name: KAWAMORITA Mitsuaki, firstly wrote this service.<br>
+			- Email: kawa[♯ at.sign.com ♯]hongo.wide.ad.jp ( [♯ at.sign.com ♯] → @ )</p>
 		</div>
 
 		<!-- ---------- ToDo ---------- -->
