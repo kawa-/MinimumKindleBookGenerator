@@ -11,17 +11,13 @@
 			<h1>Minimum Kindle Book Generator</h1>
 		</div>
 
-
-
 		<div>
 			<h2>What's this?</h2>
 			<p>You can make a kindle format book here and get the ebook via your email.<br>Probably this service is suitable for a short document like a <a href="http://www.ted.com/">TED</a> movie's script, brief report and so on.</p>
 		</div>
 
-
-
 		<div>
-			<h2>How to</h2>
+			<h2>How to make?</h2>
 			<p>1. Just input what you want to write below, like examples. <br>
 				2. Click "generate book" button.<br>
 				<br>Tips: "Tab" key is good for going to a next form.
@@ -46,10 +42,10 @@
 			<h2>Forms (Input here!)</h2>
 
 			<form id="input_area" method="post" action="generate.php" onsubmit ="get_javascript_variable()">
-				
+
 				<!-- ---------- Example ---------- -->
-				<div align ="center"><p><button type="button" value="Sample Set" onclick="set_form();"><font size="+2">Set example values</font></button><br>If you want to know how to input here, click this button.</p></div>
-				
+				<div align ="center"><p><button type="button" value="Example" onclick="set_form();"><font size="+2">Set example</font></button><br>If you want to know how to input here, click this button.</p></div>
+
 				<!-- ---------- Title ---------- -->
 				<p><br>Title:<br><input type="text" name="title" size ="30"></p>
 
@@ -65,7 +61,7 @@
 				<!-- ---------- Subject ---------- -->
 				<p><br>Subject:<br><input type="text" name="subject" size="30"></p>
 
-				<p><br>[Maximum number of chars in Description, Introduction and each Chapters is 65535]</p>
+				<p><br>[Maximum number of characters in Description, Introduction and each Chapters is 65535]</p>
 
 				<!-- ---------- Description ---------- -->
 				<p><br>Description:<br><textarea name="description" rows="5" cols="100"></textarea></textarea><br></p>
@@ -85,48 +81,40 @@
 
 				<!-- ---------- Add New Chapter ---------- -->
 				<div align ="center"><p><button type="button" id="add_input_textarea" onclick="add();"><font size="+3">Add New Chapter</font></button><br>To add a chapter, click this button and a new chapter form will appear. Max 255 Chapters available.</p></div>
-				
+
 				<!-- ---------- Delete A Chapter ---------- -->
 				<div align ="center"><p><br><br><button type="button" id="delete_input_textarea" onclick="delete_chapter();"><font size="+1">Delete Chapter</font></button><br>To delete a latest chapter, click this button and a latest chapter form will disappear.</p></div>
-				
+
 				<!-- ---------- generate book button ---------- -->
 				<div align ="center"><p><br><br><button type="submit" id="generate_book" onclick=""><input type="hidden" name="hidden_input" value="" /><font size="+3">Generate Book</font></button><br>To generate a book after filling the forms above, click this button.<br>At least three chapters are needed.<input type="hidden" name="num" id="num" /></p></div>
-				
-				
+
+
 			</form>
 		</div>
 
-		<!-- ---------- Contact ---------- -->
-		<div>
-			<h2>Contact</h2>
-			<p>- email : kawa[♯#$ at.sign.com $#♯]hongo.wide.ad.jp ( [♯#$ at.sign.com $#♯] → @ )<br>
-				- website : <a href="http://mitsuakikawamorita.com/">http://mitsuakikawamorita.com/</a> (Written in Japanese)</p>
-		</div>
-		
 		<!-- ---------- Contributer ---------- -->
+		<!-- When pull request, please add your name and your contribution. -->
 		<div>
 			<h2>Contributer</h2>
 			<p>- KAWAMORITA Mitsuaki, firstly wrote this service.<br></p>
 		</div>
 
 		<!-- ---------- History ---------- -->
+		<!-- When pull request, please add date, your name and your contribution. -->
 		<div>
 			<h2>History</h2>
-			<p>2012-08-11:<br>Started making this web app. </p>
-			<p>2013-02-23:<br>Rewrited this service and deployed to the world.</p>
+			<p>2012-08-11:<br>Started making this web app. [KAWAMORITA Mitsuaki]</p>
+			<p>2013-02-23:<br>Rewrited this service and deployed to the world. [KAWAMORITA Mitsuaki]</p>
 		</div>
-
-
 
 		<!-- ---------- ToDo ---------- -->
 		<div>
 			<h2>ToDo</h2>
-			<p>- Make a Japanese UI Version<br>
-				- MarkDown or Textile style available<br>
+			<p>- Make a Japanese UI Version [KAWAMORITA Mitsuaki]<br>
+				- MarkDown or Textile style available [KAWAMORITA Mitsuaki]<br>
+				- Send the book by email [KAWAMORITA Mitsuaki]<br>
 			</p>
 		</div>
-
-
 
 		<!-- ---------- Copyright ---------- -->
 		<div>

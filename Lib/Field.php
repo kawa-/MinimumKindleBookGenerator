@@ -5,6 +5,7 @@
  *
  * @author KAWAMORITA Mitsuaki
  */
+
 abstract class Field {
 
 	const MAX_LEN_DATE = 12; // like 2013-02-24
@@ -219,9 +220,5 @@ class Debug {
 	}
 
 }
-
-/* TEST */
-//$date = new Date("2012-02-25");
-//echo $date->validate() ? "OK" : "NO";
 
 ?>

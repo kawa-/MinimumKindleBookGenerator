@@ -3,8 +3,8 @@
 </head>
 
 <?php
-require "./Lib/Field.php";
-require "./Lib/KindleFile.php";
+require_once "./Lib/Field.php";
+require_once "./Lib/KindleBook.php";
 
 
 error_reporting(E_ALL | E_STRICT);
@@ -42,7 +42,7 @@ if (!$date->validate()) {
 try {
 	$number_of_chapters = intval(isset($_POST['hidden_input']) ? $_POST['hidden_input'] : 0);
 } catch (ErrorException $e) {
-	die("[Internal Server ERROR] So sorry for your convenience, coould not generate the book. Seems like this system has partialy broken. I'm going to fix it. [" . $e->getMessage() . "]<br>\n");
+	die("[Internal Server ERROR] So sorry for your convenience, coould not generate the book. Seems like this system has partialy broken. [" . $e->getMessage() . "]<br>\n");
 }
 
 // get another chapter's titles and contents and gather up together.
@@ -65,9 +65,13 @@ for ($i = 4; $i <= $number_of_chapters; $i++) {
 	$chapter_contents[] = new Chapter($_POST[$temp_chapter_contents]);
 }
 
-$mobibook = new KindleFile($title, $date, $creator, $subject, $description, $intro_title, $intro_contents, $number_of_chapters, $chapter_titles, $chapter_contents);
+$mobibook = new KindleBook($title, $date, $creator, $subject, $description, $intro_title, $intro_contents, $number_of_chapters, $chapter_titles, $chapter_contents);
 
-echo (string)$mobibook;
+//echo (string)$mobibook;
+$mobibook->write_all_files();
+$rep = $mobibook->generateKindle();
 
-
+$link = $rep[0];
+printf("<a href='" . $link . "'>Click here to download</a>");
+KindleBook::printKindleGenLog($rep[1]);
 ?>
