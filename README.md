@@ -2,7 +2,7 @@
 A web GUI of generating a simple Kindle Book.
 
 ## Screenshot
-![screenshot](http://mitsuakikawamorita.com/software/MKBG/MKBG_screenshot.png)
+![screenshot](http://mitsuakikawamorita.com/software/MKBG/MKBG_screen_shot.png)
 
 ## Requirements
 - Available on Linux, MacOS (and probably FreeBSD)
