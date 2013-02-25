@@ -1,6 +1,9 @@
 # Minimum Kindle Book Generator
 A web GUI of generating a simple Kindle Book.
 
+## Screenshot
+![screenshot](http://mitsuakikawamorita.com/software/MKBG/MKBG_screenshot.png)
+
 ## Requirements
 - Available on Linux, MacOS (and probably FreeBSD)
 - HTTPD(Apache, Nginx, lighttd, etc)
@@ -17,6 +20,8 @@ I'd like to host this to my server for everybody, but according to kindlegen's l
 
 
 ## How to install and run
+
+### CentOS / SL / Amazon Linux
 	$ yum install php php-mbstring php-mysql php-mcrypt php-gd php-devel php-pear php-pecl-apc httpd git -y
 	$ cd /var/lib/
 	$ git clone git://github.com/kawa-/MinimumKindleBookGenerator.git
