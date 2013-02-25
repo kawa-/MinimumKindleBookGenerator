@@ -4,6 +4,9 @@ A web GUI of generating a simple Kindle Book.
 ## Screenshot
 ![screenshot](http://mitsuakikawamorita.com/software/MKBG/MKBG_screen_shot.png)
 
+## Generated Book
+- [sample generated book](http://mitsuakikawamorita.com/software/MKBG/the_great_gatsby_sample.mobi)
+
 ## Requirements
 - Available on Linux, MacOS (and probably FreeBSD)
 - httpd(Apache, Nginx, lighttd, etc)
