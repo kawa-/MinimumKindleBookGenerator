@@ -22,6 +22,7 @@ class KindleBook {
 	private $opf;
 	private $chapter;
 	private $directory_name;
+	private $generated_book_name;
 
 	public function __construct($title, $date, $creator, $subject, $description, $introduction_title, $introduction_contents, $number_of_chapters, $chapter_titles, $chapter_contents) {
 		$this->title = $title;
@@ -36,6 +37,7 @@ class KindleBook {
 		$this->chapter_titles = $chapter_titles;
 		$this->chapter_contents = $chapter_contents;
 		$this->directory_name = md5(mt_rand() . ceil(microtime(true) * 1000) . uniqid(mt_rand()));
+		$this->generated_book_name = date("Y-m-d") . "_book.mobi";
 	}
 
 	public function __toString() {
@@ -302,16 +304,15 @@ EOT;
 	function generateKindle() {
 		// exec kindlegen
 		$output = "";
-		$date = date("Y-m-d");
-		exec('./kindlegen -locale en ' . "./books/" . $this->directory_name . "/" . $date . "_your_ebook.opf", $output);
+		exec('./kindlegen -locale en ' . "./books/" . $this->directory_name . "/your_ebook.opf" . " -o " . $this->generated_book_name, $output);
 
 		// downloadlink
-		if (file_exists("./books/" . $this->directory_name . '/your_ebook.mobi')) {
-			$link = "./books/" . $this->directory_name . '/your_ebook.mobi';
-		} else {
+		$link = "./books/" . $this->directory_name . '/' . $this->generated_book_name;
+		if (!file_exists($link)) {
+			self::printKindleGenLog($output);
 			die("Looks like failed to generate the book.");
 		}
-
+		
 		return array($link, $output);
 	}
 
