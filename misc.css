@@ -11,8 +11,7 @@ root {
 }
 
 body { font-size: 14pt;
-	   line-height: 1.2;
-	   background-color: #dddddd;}
+	   line-height: 1.2; }
 
 h1{  
 	text-align: center;
