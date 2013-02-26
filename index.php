@@ -31,8 +31,9 @@
 			<p>1. This service generates a ridiculously simple and minimum Kindle book. No HTML tags, pics, URLs and so on.<br>
 				2. You need to fill in at least three chapters.<br>
 				3. If you want to make a rich Kindle book, try to find other better services.<br>
-				4. Please do not pirate. <br>
-				5. To the extent you inputted original texts, the book you generated here belongs to you, you have a copyright of it and can use it as you want.<br>
+				4. Only English and Japanese available.<br>
+				5. Please do not pirate. <br>
+				6. To the extent you inputted original texts, the book you generated here belongs to you, you have a copyright of it and can use it as you want.<br>
 			</p>
 		</div>
 
@@ -96,16 +97,17 @@
 		<!-- When pull request, please add your name and your contribution. -->
 		<div>
 			<h2>Contributer</h2>
-			<p>- Name: KAWAMORITA Mitsuaki, firstly wrote this service.<br>
-			- Email: kawa[♯ at.sign.com ♯]hongo.wide.ad.jp ( [♯ at.sign.com ♯] → @ )</p>
+			<p>- Name: KAWAMORITA Mitsuaki(kawa[♯ at.sign.com ♯]hongo.wide.ad.jp ( [♯ at.sign.com ♯] → @ )), firstly wrote this service.<br>
+			</p>
 		</div>
 
 		<!-- ---------- ToDo ---------- -->
 		<div>
-			<h2>ToDo</h2>
+			<h2>ToDo with who requested</h2>
 			<p>- Make a Japanese UI Version [KAWAMORITA Mitsuaki]<br>
 				- MarkDown or Textile style available [KAWAMORITA Mitsuaki]<br>
 				- Send the book by email [KAWAMORITA Mitsuaki]<br>
+				- Add other languages(now only English and Japanese) [KAWAMORITA Mitsuaki]<br>
 			</p>
 		</div>
 
