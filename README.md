@@ -8,7 +8,7 @@ A web GUI of generating a simple Kindle Book.
 - [sample generated book](http://mitsuakikawamorita.com/software/MKBG/the_great_gatsby_sample.mobi)
 
 ## Requirements
-- Available on Linux, MacOS (and probably FreeBSD)
+- Available on Linux (Also available on MacOS, but need a kindlegen for MacOS)
 - httpd(Apache, Nginx, lighttd, etc)
 - PHP(> 5.3)
 - PHP plugins, GD, mbstring
@@ -21,10 +21,14 @@ A web GUI of generating a simple Kindle Book.
 ## Notes
 I'd like to host this to my server for everybody, but according to kindlegen's licence, to set kindlegen via network is forbidden. So please use it on your own machine for only you.
 
+## ToDo
+- HTML tags available
+- Markdown and Textile
+- Users can upload their own picture as a cover
 
 ## How to install and run
 
-### CentOS / SL / Amazon Linux
+### CentOS / ScientficLinux / Amazon Linux
 	$ yum install php php-mbstring php-mysql php-mcrypt php-gd php-devel php-pear php-pecl-apc httpd git -y
 	$ cd /var/lib/
 	$ git clone git://github.com/kawa-/MinimumKindleBookGenerator.git
