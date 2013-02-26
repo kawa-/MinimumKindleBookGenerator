@@ -302,7 +302,8 @@ EOT;
 	function generateKindle() {
 		// exec kindlegen
 		$output = "";
-		exec('./kindlegen -locale en ' . "./books/" . $this->directory_name . "/your_ebook.opf", $output);
+		$date = date("Y-m-d");
+		exec('./kindlegen -locale en ' . "./books/" . $this->directory_name . "/" . $date . "_your_ebook.opf", $output);
 
 		// downloadlink
 		if (file_exists("./books/" . $this->directory_name . '/your_ebook.mobi')) {
